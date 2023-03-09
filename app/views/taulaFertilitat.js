@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 
-export default function PovertyTable(props) {
+export default function FetilitatTable(props) {
   return (
     <View style={styles.container}>
       <FlatList
@@ -10,23 +10,27 @@ export default function PovertyTable(props) {
         renderItem={({ item }) => (
           <View style={styles.row}>
             <Text style={styles.cell}>{item.Pais}</Text>
-            <Text style={styles.cell}>{item.Rank}</Text>
-            <Text style={styles.cell}>{item.Continent}</Text>
-            <Text style={styles.cell}>{item.Poblacio}</Text>
-            <Text style={styles.cell}>{item.Area}</Text>
-            <Text style={styles.cell}>{item.Index_de_Creixement}</Text>
-            <Text style={styles.cell}>{item.Poblacio_Mundial}</Text>
+            <Text style={styles.cell}>{item.any1961}</Text>
+            <Text style={styles.cell}>{item.any1971}</Text>
+            <Text style={styles.cell}>{item.any1981}</Text>
+            <Text style={styles.cell}>{item.any1991}</Text>
+            <Text style={styles.cell}>{item.any2001}</Text>
+            <Text style={styles.cell}>{item.any2011}</Text>
+            <Text style={styles.cell}>{item.any2019}</Text>
+            <Text style={styles.cell}>{item.any2020}</Text>
           </View>
         )}
         ListHeaderComponent={() => (
           <View style={styles.header}>
             <Text style={styles.headerText}>Pais</Text>
-            <Text style={styles.headerText}>Rank</Text>
-            <Text style={styles.headerText}>Continent</Text>
-            <Text style={styles.headerText}>Poblacio</Text>
-            <Text style={styles.headerText}>Area (km²)</Text>
-            <Text style={styles.headerText}>Index de Creixement</Text>
-            <Text style={styles.headerText}>Població Mundial (%)</Text>
+            <Text style={styles.headerText}>1961</Text>
+            <Text style={styles.headerText}>1971</Text>
+            <Text style={styles.headerText}>1981</Text>
+            <Text style={styles.headerText}>1991</Text>
+            <Text style={styles.headerText}>2001</Text>
+            <Text style={styles.headerText}>2011</Text>
+            <Text style={styles.headerText}>2019</Text>
+            <Text style={styles.headerText}>2020</Text>
           </View>
         )}
       />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 
-export default function PovertyTable(props) {
+export default function EspervidaTable(props) {
   return (
     <View style={styles.container}>
       <FlatList
@@ -10,23 +10,19 @@ export default function PovertyTable(props) {
         renderItem={({ item }) => (
           <View style={styles.row}>
             <Text style={styles.cell}>{item.Pais}</Text>
-            <Text style={styles.cell}>{item.Rank}</Text>
-            <Text style={styles.cell}>{item.Continent}</Text>
-            <Text style={styles.cell}>{item.Poblacio}</Text>
-            <Text style={styles.cell}>{item.Area}</Text>
-            <Text style={styles.cell}>{item.Index_de_Creixement}</Text>
-            <Text style={styles.cell}>{item.Poblacio_Mundial}</Text>
+            <Text style={styles.cell}>{item.Any}</Text>
+            <Text style={styles.cell}>{item.Espervida}</Text>
+            <Text style={styles.cell}>{item.Adult_Mortality}</Text>
+            <Text style={styles.cell}>{item.Infant_Deaths}</Text>
           </View>
         )}
         ListHeaderComponent={() => (
           <View style={styles.header}>
             <Text style={styles.headerText}>Pais</Text>
-            <Text style={styles.headerText}>Rank</Text>
-            <Text style={styles.headerText}>Continent</Text>
-            <Text style={styles.headerText}>Poblacio</Text>
-            <Text style={styles.headerText}>Area (km²)</Text>
-            <Text style={styles.headerText}>Index de Creixement</Text>
-            <Text style={styles.headerText}>Població Mundial (%)</Text>
+            <Text style={styles.headerText}>Any</Text>
+            <Text style={styles.headerText}>Esperança de vida</Text>
+            <Text style={styles.headerText}>Mortalitat adulta</Text>
+            <Text style={styles.headerText}>Mortalitat d'infants</Text>
           </View>
         )}
       />

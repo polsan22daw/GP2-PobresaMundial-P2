@@ -1,14 +1,29 @@
 [
   {
-    "country": "Afghanistan",
-    "poverty_rate": "54.5%"
+    "Pais": "Afganistán",
+    "Rank": 138,
+    "Continent": "Asia",
+    "Poblacio": 37172386,
+    "Area": 652230,
+    "Index_de_Creixement": 2.5,
+    "Poblacio_Mundial": 0.5
   },
   {
-    "country": "Albania",
-    "poverty_rate": "14.3%"
+    "Pais": "Albania",
+    "Rank": 112,
+    "Continent": "Europa",
+    "Poblacio": 2866376,
+    "Area": 28748,
+    "Index_de_Creixement": 0.1,
+    "Poblacio_Mundial": 0.0
   },
   {
-    "country": "Algeria",
-    "poverty_rate": "23.0%"
+    "Pais": "Alemania",
+    "Rank": 15,
+    "Continent": "Europa",
+    "Poblacio": 82905782,
+    "Area": 357021,
+    "Index_de_Creixement": 0.2,
+    "Poblacio_Mundial": 1.1
   }
 ]
