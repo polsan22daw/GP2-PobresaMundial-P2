@@ -1,9 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 const Taulas = ({ navigation }) => {
   const taula1 = () => {
-    navigation.navigate('Pobresa');
+    navigation.navigate('Poblacio');
   };
 
   const taula2 = () => {
@@ -17,7 +18,7 @@ const Taulas = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.button} onPress={taula1}>
-        <Text style={styles.buttonText}>Pobresa</Text>
+        <Text style={styles.buttonText}>Poblacio</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={taula2}>
         <Text style={styles.buttonText}>Esperança de vida</Text>
@@ -36,12 +37,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   button: {
-    backgroundColor: '#007bff',
+    backgroundColor: 'darkviolet',
     padding: 20,
     borderRadius: 10,
     marginVertical: 20,
+    width: 300,
+    height: 80,
   },
   buttonText: {
+    textAlign: 'center',
     color: 'white',
     fontSize: 18,
   },
