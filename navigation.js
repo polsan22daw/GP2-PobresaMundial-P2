@@ -12,7 +12,7 @@ function MyTabs() {
         <Tab.Navigator
             initialRouteName="Home"
             screenOptions={{
-                tabBarActiveTintColor: '#e91e63',
+                tabBarActiveTintColor: '#092a84',
             }}
         >
 
@@ -24,7 +24,16 @@ function MyTabs() {
                     tabBarIcon: ({ color, size }) => (
                         <MaterialCommunityIcons name="home" color={color} size={size} />
                     ),
-                }}
+                    tabBarStyle: {
+                        backgroundColor: '#e2eaff',
+                    },
+                    headerStyle: {
+                        backgroundColor: '#223d89',
+                    },
+                    headerTitleStyle: {
+                        color: '#fff',
+                    },
+                }}                
             />
                 <Tab.Screen
                     name="Taules"
@@ -34,6 +43,15 @@ function MyTabs() {
                         tabBarIcon: ({ color, size }) => (
                             <MaterialCommunityIcons name="table" color={color} size={size} />
                         ),
+                        tabBarStyle: {
+                            backgroundColor: '#e2eaff',
+                        },
+                        headerStyle: {
+                            backgroundColor: '#223d89',
+                        },
+                        headerTitleStyle: {
+                            color: '#fff',
+                        },
                     }}
                 />
         </Tab.Navigator>

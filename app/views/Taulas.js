@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
 const Taulas = ({ navigation }) => {
   const taula1 = () => {
@@ -17,36 +16,46 @@ const Taulas = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
+      <Image
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          transform: [{rotate: '180deg'}]
+        }}
+        source={Url = { uri: 'https://www.todofondos.net/wp-content/uploads/fondo-de-pantalla-azul-marino-576x1024.jpg' }}
+      />
       <TouchableOpacity style={styles.button} onPress={taula1}>
-        <Text style={styles.buttonText}>Poblacio</Text>
+        <Text style={styles.buttonText}>Paisos ordenats per Població Mundial</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={taula2}>
-        <Text style={styles.buttonText}>Esperança de vida</Text>
+        <Text style={styles.buttonText}>Paisos ordenats per Esperança de Vida</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={taula3}>
-        <Text style={styles.buttonText}>Fertilitat</Text>
+        <Text style={styles.buttonText}>Paisos ordenats per Fertilitat del 2020</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
   button: {
-    backgroundColor: 'darkviolet',
+    backgroundColor: '#e2eaff',
     padding: 20,
     borderRadius: 10,
     marginVertical: 20,
     width: 300,
-    height: 80,
+    height: 95,
   },
   buttonText: {
     textAlign: 'center',
-    color: 'white',
+    color: '#223d89',
     fontSize: 18,
   },
 });

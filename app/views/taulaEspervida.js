@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f2f2f2',
   },
   row: {
-    height: 40,
+    height: 60,
     flexDirection: 'row',
     borderBottomWidth: 1,
     borderColor: '#ccc',
