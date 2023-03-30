@@ -26,13 +26,13 @@ const Taulas = ({ navigation }) => {
         source={Url = { uri: 'https://www.todofondos.net/wp-content/uploads/fondo-de-pantalla-azul-marino-576x1024.jpg' }}
       />
       <TouchableOpacity style={styles.button} onPress={taula1}>
-        <Text style={styles.buttonText}>Paisos ordenats per Població Mundial</Text>
+        <Text style={styles.buttonText}>Països ordenats per Població Mundial</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={taula2}>
-        <Text style={styles.buttonText}>Paisos ordenats per Esperança de Vida</Text>
+        <Text style={styles.buttonText}>Països ordenats per Esperança de Vida</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={taula3}>
-        <Text style={styles.buttonText}>Paisos ordenats per Fertilitat del 2020</Text>
+        <Text style={styles.buttonText}>Països ordenats per Fertilitat del 2020</Text>
       </TouchableOpacity>
     </View>
   );
